@@ -12,6 +12,10 @@
 /.idea
 ###< phpstorm ###
 
+###> phpstorm ###
+/.php_cs.cache
+###< phpstorm ###
+
 ###> squizlabs/php_codesniffer ###
 /.phpcs-cache
 /phpcs.xml
