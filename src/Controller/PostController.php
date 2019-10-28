@@ -33,8 +33,6 @@ final class PostController extends AbstractController
     }
 
     /**
-     * @param Request $request
-     * @return JsonResponse
      * @Rest\Post("/posts", name="createPost")
      */
     public function createAction(Request $request): JsonResponse

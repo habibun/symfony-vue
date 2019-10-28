@@ -14,7 +14,7 @@ final class HTTPExceptionListener
     public function onKernelException(ExceptionEvent $event): void
     {
         $exception = $event->getException();
-        if (!($exception instanceof HttpException) || false === strpos($event->getRequest()->getRequestUri(), '/api/')) {
+        if (! ($exception instanceof HttpException) || strpos($event->getRequest()->getRequestUri(), '/api/') === false) {
             return;
         }
 
