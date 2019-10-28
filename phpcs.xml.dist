@@ -9,15 +9,8 @@
     <arg value="nps"/>
 
     <!-- Directories to be checked -->
-<!--    <file>src</file>-->
-<!--    <file>tests</file>-->
-
-    <testsuites>
-        <testsuite name="Project Test Suite">
-            <directory>src/</directory>
-            <directory>tests/</directory>
-        </testsuite>
-    </testsuites>
+    <file>src</file>
+    <file>tests</file>
 
     <exclude-pattern>tests/dependencies/*</exclude-pattern>
 

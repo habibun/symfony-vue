@@ -23,6 +23,8 @@ abstract class AbstractControllerWebTestCase extends WebTestCase
     }
 
     /**
+     * @param string  $method
+     * @param string  $uri
      * @param mixed[] $data
      *
      * @throws JsonException
@@ -33,6 +35,8 @@ abstract class AbstractControllerWebTestCase extends WebTestCase
     }
 
     /**
+     * @param Response $response
+     * @param int      $expectedStatusCode
      * @return mixed
      *
      * @throws JsonException
