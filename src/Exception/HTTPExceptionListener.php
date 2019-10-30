@@ -9,12 +9,18 @@ use Symfony\Component\HttpKernel\Event\ExceptionEvent;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use function strpos;
 
+/**
+ * Class HTTPExceptionListener.
+ */
 final class HTTPExceptionListener
 {
+    /**
+     * @param ExceptionEvent $event
+     */
     public function onKernelException(ExceptionEvent $event): void
     {
         $exception = $event->getException();
-        if (! ($exception instanceof HttpException) || strpos($event->getRequest()->getRequestUri(), '/api/') === false) {
+        if (!($exception instanceof HttpException) || false === strpos($event->getRequest()->getRequestUri(), '/api/')) {
             return;
         }
 

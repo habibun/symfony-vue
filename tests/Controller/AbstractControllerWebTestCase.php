@@ -53,6 +53,8 @@ abstract class AbstractControllerWebTestCase extends WebTestCase
     }
 
     /**
+     * @param string $username
+     * @param string $password
      * @throws JsonException
      */
     protected function login(string $username = UserFixtures::DEFAULT_USER_LOGIN, string $password = UserFixtures::DEFAULT_USER_PASSWORD): void
