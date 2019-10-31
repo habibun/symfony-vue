@@ -35,10 +35,10 @@ final class PostController extends AbstractController
     }
 
     /**
-     * @Rest\Post("/posts", name="createPost")
-     * @IsGranted("ROLE_FOO")
      * @param Request $request
      * @return JsonResponse
+     * @Rest\Post("/posts", name="createPost")
+     * @IsGranted("ROLE_FOO")
      */
     public function createAction(Request $request): JsonResponse
     {

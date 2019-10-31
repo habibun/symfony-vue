@@ -165,6 +165,9 @@ class User implements UserInterface
         $this->password = $password;
     }
 
+    /**
+     * @return null
+     */
     public function getSalt()
     {
         // The bcrypt algorithm doesn't require a separate salt.
@@ -188,7 +191,7 @@ class User implements UserInterface
     }
 
     /**
-     * @return Void
+     *
      */
     public function eraseCredentials(): void
     {

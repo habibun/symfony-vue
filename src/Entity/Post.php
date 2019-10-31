@@ -65,26 +65,41 @@ class Post
         $this->updated = new DateTime('NOW');
     }
 
+    /**
+     * @return UuidInterface
+     */
     public function getId(): UuidInterface
     {
         return $this->id;
     }
 
+    /**
+     * @return string
+     */
     public function getMessage(): string
     {
         return $this->message;
     }
 
+    /**
+     * @param string $message
+     */
     public function setMessage(string $message): void
     {
         $this->message = $message;
     }
 
+    /**
+     * @return DateTime
+     */
     public function getCreated(): DateTime
     {
         return $this->created;
     }
 
+    /**
+     * @return DateTime|null
+     */
     public function getUpdated(): ?DateTime
     {
         return $this->updated;

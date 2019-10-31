@@ -25,8 +25,6 @@ abstract class AbstractControllerWebTestCase extends WebTestCase
     }
 
     /**
-     * @param string  $method
-     * @param string  $uri
      * @param mixed[] $data
      *
      * @throws JsonException
@@ -37,8 +35,6 @@ abstract class AbstractControllerWebTestCase extends WebTestCase
     }
 
     /**
-     * @param Response $response
-     * @param int      $expectedStatusCode
      * @return mixed
      *
      * @throws JsonException
@@ -53,8 +49,6 @@ abstract class AbstractControllerWebTestCase extends WebTestCase
     }
 
     /**
-     * @param string $username
-     * @param string $password
      * @throws JsonException
      */
     protected function login(string $username = UserFixtures::DEFAULT_USER_LOGIN, string $password = UserFixtures::DEFAULT_USER_PASSWORD): void
