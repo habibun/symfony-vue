@@ -1,4 +1,3 @@
-# symfony-vue
 Building a single page application with symfony 4, vue js, vue router, vuex and axios
 
 | Repository Branch | Symfony Version | PHP Version     |
